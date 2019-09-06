@@ -1,0 +1,12 @@
+@mixin placeholder {
+	::-webkit-input-placeholder {@content}
+	:-moz-placeholder           {@content}
+	::-moz-placeholder          {@content}
+	:-ms-input-placeholder      {@content}
+};
+
+@include placeholder {
+	font-style: $placeholder-style;
+	color: $placeholder-color;
+	font-weight: $placeholder-weight;
+}

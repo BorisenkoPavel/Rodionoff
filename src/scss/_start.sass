@@ -1,0 +1,116 @@
+@import vars
+@import mixins/mixins
+@import libs/libs
+@import modules/modules
+
+html
+	@include fluid-type($min_width, $max_width, $min_font, $max_font)
+	height: 100%
+
+body
+	height: 100%
+	font-family: $d-font
+	color: #fff
+	background-color: #050816
+h1
+	font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem
+	@include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *$min_font)
+
+h2
+	font-size: $mod_1*$mod_1*$mod_1 *0.5rem
+	@include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2 *$min_font)
+
+h3 
+	font-size: $mod_1*$mod_1 *1rem
+	@include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font)
+
+h4
+	font-size: $mod_1*$mod_1*$mod_1 *0.5rem
+	@include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font)
+
+h5
+	font-size: $mod_1*$mod_1 *1rem
+	@include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font)
+
+h1, h2, h3, h4, h5, h6
+	margin-bottom: .5em
+	font-weight: normal
+	line-height: 1.2
+
+.subtitle
+	font-size: 1.25rem
+
+.text-small
+	font-size: 0.875rem
+.text-accent
+	background: $grad
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+.text-big
+	font-size: 1.125rem
+
+.b
+	font-weight: bold
+
+a
+	text-decoration: none
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea
+	vertical-align: middle
+
+textarea
+	resize: none
+
+input,
+select,
+button
+	outline: none
+
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+
+.content
+	flex: 1 0 auto
+
+section
+	position: relative
+	padding: 3.75rem 0
+
+.link
+	color: inherit
+	&:hover
+		color: $accent
+		background: $grad
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		text-decoration: none
+
+.nolink
+	color: inherit
+	&:hover
+		color: inherit
+		text-decoration: none
+	
+ul
+	list-style-type: none
+
+ul.chek-list
+	margin: 0
+	padding: 0
+	li
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			background-image: url(../img/general/check.png)
+			width: 28px
+			height: 28px
