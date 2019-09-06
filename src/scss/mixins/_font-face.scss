@@ -14,6 +14,10 @@
 	}
 }
 
-@include font-face($d-font, "../fonts/#{$d-font}/#{$d-font}");
-@include font-face($d-font, "../fonts/#{$d-font}/#{$d-font}Bold", bold);
-@include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}");
+@include font-face($d-font, "../fonts/#{$d-font}/#{$d-font}-Regular/#{$d-font}-Regular");
+@include font-face($d-font, "../fonts/#{$d-font}/#{$d-font}-Bold/#{$d-font}-Bold", bold);
+@include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Regular/#{$a-font}-Regular");
+@include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Bold/#{$a-font}-Bold", bold);
+@include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Medium/#{$a-font}-Medium", 500);
+@include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Light/#{$a-font}-Light", 300);
+@include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-SemiBold/#{$a-font}-SemiBold", 600);

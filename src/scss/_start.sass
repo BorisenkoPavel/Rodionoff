@@ -9,7 +9,7 @@ html
 
 body
 	height: 100%
-	font-family: $d-font
+	font-family: $a-font
 	color: #fff
 	background-color: #050816
 h1
@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: .5em
 	font-weight: normal
 	line-height: 1.2
+	font-family: $d-font
 
 .subtitle
 	font-size: 1.25rem
@@ -102,15 +103,45 @@ section
 ul
 	list-style-type: none
 
-ul.chek-list
+ul.check-list
 	margin: 0
 	padding: 0
 	li
 		position: relative
+		padding-left: 2.5rem
 		&:before
 			content: ''
 			position: absolute
 			left: 0
 			background-image: url(../img/general/check.png)
+			background-repeat: no-repeat
+			background-position: center
 			width: 28px
 			height: 28px
+
+.btn2
+	border: none
+	font-family: inherit
+	font-size: inherit
+	color: inherit
+	background: $grad
+	cursor: pointer
+	padding: 1.5625rem 5rem
+	display: inline-block
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-weight: 700
+	outline: none
+	position: relative
+	transition: all 0.3s
+	color: #fff
+	box-shadow: 0 6px #3920ff, -5px 18px 90px rgba(186, 77, 255, 0.4), inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
+	transition: none
+	border-radius: 15px
+	font-size: 1.5625rem
+	&:hover
+		box-shadow: 0 4px #3920ff, -5px 18px 90px rgba(186, 77, 255, 0.4), inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
+		top: 2px
+	&:active
+		box-shadow: 0 0 #3920ff, -5px 18px 90px rgba(186, 77, 255, 0.4), inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
+		top: 6px
