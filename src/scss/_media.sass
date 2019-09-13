@@ -5,18 +5,85 @@
 
 // ≥1200px
 +media-breakpoint-down(xxl)
-
 // ≥1200px
 +media-breakpoint-down(lg)
+	.section-banner
+		.check-list
+			li
+				margin-bottom: 1.5rem
+				min-width: 20rem
+	.btn-arrow
+		.btn-desc
+			position: absolute
+			content: 'Получите бесплатную концепцию проекта от эксперта'
+			left: 0
+			right: -100px
+			top: 140%
+			width: auto
+			&:after
+				content: ''
+				position: absolute
+				right: 5%
+				bottom: 35%
+				width: 84px
+				height: 20px
+				transform: rotatey(180deg) rotate(120deg)
+				background: url(../img/general/arrow.png)
+				top: -210%
+	.btn2
+		padding: 1.5625rem 3.75rem
+	.bust
+		right: -350px
+		left: auto
+		filter: blur(5px)
+	.section-slider
+		background: transparent!important
 
 // ≥992px
 +media-breakpoint-down(md)
+	.section-garant
+		&:before, &:after
+			display: none
+	.bg-container
+		display: none
+	.swiper-nav
+		width: 145px
+		height: 85px
+	.swiper-page
+		order: 2
+	.swiper-nav.swiper-next
+		order: 3
+	.swiper-nav.swiper-prev
+		order: 1
+	.section-solution
+		background: transparent!important
 
+	.section-form
+		form
+			width: 100%
+			max-width: 100%
 // ≥768px
 +media-breakpoint-down(sm)
-
+	.bust
+		right: -400px
+		left: auto
+		filter: blur(5px)
+	.answer-block
+		margin-bottom: 1.5rem
 // ≥576px
 +media-breakpoint-down(xs)
+	.photo-gradient
+	.slide 
+		padding: 1.5625rem
+	.total
+		padding: 1.5625rem
+	.btn-arrow
+		.btn-desc
+			right: 0
+			&:after
+				right: -18%
+				top: -105%
+				transform: rotatey(180deg) rotate(90deg)
 
 /*==========  mobile First  ==========*/
 

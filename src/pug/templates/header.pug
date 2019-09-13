@@ -1,11 +1,11 @@
 header.header
   .container.d-flex.justify-content-between.align-items-center.py-3
-    img.logo(src="img/general/logo.png", alt="")
-    ul.nav.m-0.p-0.d-flex
+    a(href="/"): img.logo(src="img/general/logo.png", alt="")
+    ul.nav.m-0.p-0.d-none.d-xl-flex
       li: a.link.p-3(href="") Проконсультироваться
       li: a.link.p-3(href="") Другие наши услуги
       li: a.link.p-3(href="") Ценные советы
     .phone.text-right 
       a.link.b(href="tel: +7-499-649-21-55") +7-499-649-21-55 <br>
-      .text-small Заказать звонок
+      a.text-small.link(href="" data-toggle="modal" data-target="#modal") Заказать звонок
 

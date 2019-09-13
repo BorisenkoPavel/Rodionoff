@@ -1,12 +1,21 @@
 #modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='modalTitle' aria-hidden='true')
 	.modal-dialog.modal-dialog-centered(role='document')
 		.modal-content
-			.modal-header
-				h5#modalTitle.modal-title Modal title
-				button.close(type='button' data-dismiss='modal' aria-label='Close')
-					span(aria-hidden='true') &times;
-			.modal-body
-				| ...
-			.modal-footer
-				button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-				button.btn.btn-primary(type='button') Save changes
+			form.text-center.d-flex.flex-column.m-auto.mw-100
+				h3: small Давайте обсудим детали вашего проекта
+				p Оставьте заявку и мы перезвоним вам
+				input(type='hidden' name='admin_email' value='v4nich@gmail.com')
+				input(type='hidden' name='project_name' value='Rodionoff')
+				input(type='hidden' name='form_subject' value='contacts')
+				input.mb-4.input-name(type="text" required placeholder="Введите ваше имя")
+				input.mb-4.input-phone(type="text" required placeholder="Введите ваш номер")
+				input.mb-4.input-mail(type="mail" required placeholder="Введите ваш E-Mail") 
+				button.mb-4.btn2.px-0.py-3 Обсудить проект
+				small Нажимая на кнопку, вы принимаете условия политики конфиденциальности
+
+.modal.fade.bd-example-modal-sm(tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true")
+	.modal-dialog.modal-sm
+		.modal-content
+			.thanks.p-5.text-center
+				h2.text-primary Спасибо за заявку! 
+				p.subtitle В ближайшее время с вами свяжется наш менеджер"

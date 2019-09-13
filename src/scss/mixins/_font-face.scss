@@ -16,7 +16,8 @@
 
 @include font-face($d-font, "../fonts/#{$d-font}/#{$d-font}-Regular/#{$d-font}-Regular");
 @include font-face($d-font, "../fonts/#{$d-font}/#{$d-font}-Bold/#{$d-font}-Bold", bold);
-@include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Regular/#{$a-font}-Regular");
+@include font-face($d-font, "../fonts/#{$d-font}/#{$d-font}-book/#{$d-font}-book", 300);
+@include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Regular/#{$a-font}-Regular", 400);
 @include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Bold/#{$a-font}-Bold", bold);
 @include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Medium/#{$a-font}-Medium", 500);
 @include font-face($a-font, "../fonts/#{$a-font}/#{$a-font}-Light/#{$a-font}-Light", 300);

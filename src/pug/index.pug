@@ -8,12 +8,394 @@ block content
 		.container
 			.row
 				.col-lg-6
-					.banner-text.mb-4 Разработка коммерческих предложений <span class="text-accent">«под&nbsp;ключ»</span>
-					ul.check-list.d-flex.mb-5
-						li.subtitle.mr-4 500 выполненных проектов
-						li.subtitle.mr-4 +60% рост конверсии в&nbsp;продажу
-						li.subtitle.mr-4 До 3 месяцев сопровождения и&nbsp;консультаций
-					.btn2 Получить концепцию
-				.col-lg-6.position-relative
+					.banner-content
+						.banner-text.mb-4 Разработка коммерческих предложений <span class="text-accent">«под&nbsp;ключ»</span>
+						ul.check-list.d-flex.mb-5.flex-xl-row.flex-column
+							li.subtitle.mr-4( data-aos-once="true" data-aos="fade-up") 500 выполненных проектов
+							li.subtitle.mr-4( data-aos-once="true" data-aos="fade-up" data-aos-delay="300") +60% рост конверсии в&nbsp;продажу
+							li.subtitle.mr-4( data-aos-once="true" data-aos="fade-up" data-aos-delay="600") До 3 месяцев сопровождения и&nbsp;консультаций
+						
+						.btn-arrow.d-inline-block
+							.btn2(data-toggle="modal" data-target="#modal") Получить концепцию
+							.btn-desc( data-aos-once="true" data-aos="fade-left" data-aos-delay="900") Получите бесплатную концепцию проекта от эксперта
+					img.bust.d-lg-none.d-block(src="img/general/bust.png", alt="")
+				.d-none.d-lg-block.col-lg-6.position-relative
 					img.bust(src="img/general/bust.png", alt="")
-		
+	section.section-cases
+		.container
+			h3.mb-2 ПОСМОТРИТЕ
+			h1 ПРИМЕРЫ НАШИХ РАБОТ
+		.row.no-gutters.mb-5
+			.col-md-6.col-xl-4
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/alfa.html" style='background: url("img/content/case (2).jpg") no-repeat center/cover' target="_blank")
+					.case__body
+						h3 КОМПАНИЯ «ТЕНДЕР IT» <br>СОПРОВОЖДЕНИЕ ГОСЗАКУПОК <br>«ПОД КЛЮЧ»
+						.subtitle.d-flex.align-items-end.justify-content-between
+							span Посмотреть пример<br> коммерческого предложения
+							.arrow.mb-2
+			.col-md-6.col-xl-4
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/made-of-stone.html" style='background: url("img/content/case (1).jpg") no-repeat center/cover' target="_blank")
+					.case__body
+						h3 Компания «Rodionoff Group».<br> Разработка Landing Page <br>«под ключ»
+						.subtitle.d-flex.align-items-end.justify-content-between
+							span Посмотреть пример<br> коммерческого предложения
+							.arrow.mb-2
+			.col-md-6.col-xl-4
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/landing.html" style='background: url("img/content/case (3).jpg") no-repeat center/cover' target="_blank")
+					.case__body
+						h3 Компания «Astone Group». <br>Строительство, архитектура и дизайн.
+						.subtitle.d-flex.align-items-end.justify-content-between
+							span Посмотреть пример<br> коммерческого предложения
+							.arrow.mb-2
+			.col-md-6.col-xl-4
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/astone.html" style='background: url("img/content/case (4).jpg") no-repeat center/cover' target="_blank")
+					.case__body
+						h3 Компания «TopLine». Оптовая продажа натяжных потолков и комплектующих.
+						.subtitle.d-flex.align-items-end.justify-content-between
+							span Посмотреть пример<br> коммерческого предложения
+							.arrow.mb-2
+			.col-md-6.col-xl-4
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/topline.html" style='background: url("img/content/case (5).jpg") no-repeat center/cover' target="_blank")
+					.case__body
+						h3 Компания «LPG».<br> Маркетинг с оплатой за результат.
+						.subtitle.d-flex.align-items-end.justify-content-between
+							span Посмотреть пример<br> коммерческого предложения
+							.arrow.mb-2
+			.col-md-6.col-xl-4
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/lpg.html" style='background: url("img/content/case (6).jpg") no-repeat center/cover' target="_blank")
+					.case__body
+						h3 Компания<br> «MADE OF STONE».
+						.subtitle.d-flex.align-items-end.justify-content-between
+							span Посмотреть пример<br> коммерческого предложения
+							.arrow.mb-2
+		.btn-container.text-center
+			a.nolink.btn2(href="") еще
+	section.section-slider(style='background: url("img/general/skulpt.png") no-repeat center left/50%')
+		.container
+			.swiper-container.review-slider
+				.swiper-wrapper
+					.swiper-slide
+						.section-title.mb-5.d-inline-flex.flex-column.align-items-start
+							h1.d-inline-block.mb-2 5 000 000 рублей
+							.subtitle-container.d-inline-flex.gradient-line.align-items-center
+								h3.d-inline-block.text-right.ml-4.mb-0 за 6 месяцев
+						.slide.text-big.col-lg-9
+							.slide__header.d-flex
+								.slide__photo
+									img.w-100(src="img/content/slide(2).png")
+								.slide__author.d-flex.flex-column.justify-content-center
+									.slide__name Николай Александров
+									.slide__position
+										| Генеральный директор компании 
+										br
+										| «Юнити Софт Системс»
+							.slide__body
+								p
+									| Разработали коммерческое предложение, которое стало главным инструментом в наших продажах.
+								p В первый месяц рассылки по потенциальным клиентам получили более 100 заявок.
+								p Через полгода – 35 продаж франшизы стоимостью 150 000 рублей.
+						.total( data-aos-once="true" data-aos="fade-right")
+							| Более 
+							span.total-accent 5 000 000
+							|  рублей чистой прибыли за первые полгода использования КП.
+					.swiper-slide
+						.section-title.mb-5.d-inline-flex.flex-column.align-items-start
+							h1.d-inline-block.mb-2 «МЫ ВЫГОДГО ВЫДЕЛЯЕМСЯ СРЕДИ КОНКУРЕНТОВ»
+							.subtitle-container.d-inline-flex.gradient-line.align-items-center
+								h3.d-inline-block.text-right.ml-4.mb-0 за 6 месяцев
+						.slide.text-big.col-lg-9
+							.slide__header.d-flex
+								.slide__photo
+									img.w-100(src="img/content/slide(4).png")
+								.slide__author.d-flex.flex-column.justify-content-center
+									.slide__name Пирогов Денис
+									.slide__position
+										| Директор по развитию компании компаний
+										br
+										|  «Дон Строй Технологии»
+							.slide__body
+								p
+									| Мы продаем сложный продукт – строительство домов и зданий из ЛСТК. Донести выгоды до клиента стало непростой задачей, которую мы решили поручить настоящим профессионалам. С задачей справились на отлично. Понравился подход к изучению нашего бизнеса и оперативное внесение правок. Стоимость услуг оправдывает себя полностью. Однозначно будем заказывать еще для других направлений
+						.total( data-aos-once="true" data-aos="fade-right")
+							| Более 
+							span.total-accent 5 000 000
+							|  рублей чистой прибыли за первые полгода использования КП.
+					.swiper-slide
+						.section-title.mb-5.d-inline-flex.flex-column.align-items-start
+							h1.d-inline-block.mb-2 «ЗАРАБОТАЛИ 500 000 РУБЛЕЙ ЗА ПЕРВЫЕ 12 ВСТРЕЧ»
+							.subtitle-container.d-inline-flex.gradient-line.align-items-center
+								h3.d-inline-block.text-right.ml-4.mb-0 за 6 месяцев
+						.slide.text-big.col-lg-9
+							.slide__header.d-flex
+								.slide__photo
+									img.w-100(src="img/content/slide(3).png")
+								.slide__author.d-flex.flex-column.justify-content-center
+									.slide__name Михаил Левченко
+									.slide__position
+										| Генеральный директор группы 
+										br
+										| компаний «LPG»
+							.slide__body
+								p
+									| Вся наша модель продаж изменилась после разработки коммерческого предложения в Rodionoff Group. Ранее использовали всевозможные материалы, которые не приносили должного результата. Сейчас я на 100% уверен в том, что наше коммерческое предложение – это мощный инструмент продаж. Это подтверждают и результаты. За первые 12 встреч мы получили несколько выгодных заказов на 500 000 рублей».
+						.total( data-aos-once="true" data-aos="fade-right")
+							| Более 
+							span.total-accent 5 000 000
+							|  рублей чистой прибыли за первые полгода использования КП.
+					.swiper-slide
+						.section-title.mb-5.d-inline-flex.flex-column.align-items-start
+							h1.d-inline-block.mb-2 «1 500 000 РУБЛЕЙ НА ПРОДАЖЕ ИСКУССТВЕННЫХ ЕЛОК»
+							.subtitle-container.d-inline-flex.gradient-line.align-items-center
+								h3.d-inline-block.text-right.ml-4.mb-0 за 6 месяцев
+						.slide.text-big.col-lg-9
+							.slide__header.d-flex
+								.slide__photo
+									img.w-100(src="img/content/slide(1).png")
+								.slide__author.d-flex.flex-column.justify-content-center
+									.slide__name Алексей Сибирцев
+									.slide__position Основатель ряда компаний
+							.slide__body
+								p
+									| Нам необходимо было коммерческое предложение для продажи искусственных елок для частных организаций и городских администраций. Заказали в Rodionoff Group и были ошаламлены результатами. В течение первых 20 дней мы получили заказов на 1 500 000 рублей. План был перевыполнен, а Rodionoff Group попали в ряды избранных подрядчиков.
+						.total( data-aos-once="true" data-aos="fade-right")
+							| Более 
+							span.total-accent 5 000 000
+							|  рублей чистой прибыли за первые полгода использования КП.
+				.col-lg-3.d-flex.flex-lg-column.align-items-center.pt-4.pt-lg-0.justify-content-between.justify-content-lg-start(style="z-index: 300;position: absolute;top: 13.2%;right: 0;")
+					.swiper-page
+					.swiper-nav.swiper-next
+					.swiper-nav.swiper-prev
+	section.section-commercial
+		.container
+			h1 КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ – <br>КЛЮЧЕВОЙ ИНСТРУМЕНТ ЛЮБОГО ОТДЕЛА ПРОДАЖ
+			.subtitle.mb-5 В 90% сделок в B2B-сфере ключевую роль играет коммерческое предложение. <br>От него зависит, как воспримет клиент ваш продукт или услугу. Поймет ли он выгоды и преимущества. Сможете ли вы выделиться на рынке и отстроится от конкурентов.
+			.num-list.row
+				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up")
+					.num-item__value +10%
+					.num-item__desc Средний чек
+				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up" data-aos-delay="300")
+					.num-item__value +31%
+					.num-item__desc допродажи
+				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up" data-aos-delay="600")
+					.num-item__value +25%
+					.num-item__desc число повторных покупок
+				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up" data-aos-delay="900")
+					.num-item__value +46%
+					.num-item__desc конверсия в продажу
+	section.section-faq
+		.container
+			h1.mb-4.text-center ЗАЧЕМ ЭТО ВАМ НУЖНО?
+			.subntitle.mb-5.text-center Причин много, вот некоторые из них:
+			.row.pt-3
+				.col-md-4.answer-block
+					.answer-block__icon.mb-4
+						img(src="img/content/smile (1).png", alt="")
+					h4.answer-block__title Самый эффективный продавец в вашей компании
+					.answer-block__text У коммерческого предложения не бывает выходных, отпуска и больничных. Вы инвестируете в него один раз, а получаете прибыль несколько лет.
+				.col-md-4.answer-block
+					.answer-block__icon.mb-4
+						img(src="img/content/smile (2).png", alt="")
+					h4.answer-block__title Вам часто говорят «дорого» и «не интересно»
+					.answer-block__text У коммерческого предложения не бывает выходных, отпуска и больничных. Вы инвестируете в него один раз, а получаете прибыль несколько лет.
+				.col-md-4.answer-block
+					.answer-block__icon.mb-4
+						img(src="img/content/smile (3).png", alt="")
+					h4.answer-block__title Много звонков, но мало продаж
+					.answer-block__text У коммерческого предложения не бывает выходных, отпуска и больничных. Вы инвестируете в него один раз, а получаете прибыль несколько лет.
+
+	section.section-specialization
+		.container
+			h3 КОММЕРЧЕСКИЕ ПРЕДЛОЖЕНИЯ – 
+			h1 ЭТО ТО, В ЧЕМ МЫ РАЗБИРАЕМСЯ ЛУЧШЕ ВСЕГО
+			.row.mb-5.position-relative
+				img.photo-gradient(src="img/general/cloud.png", alt="")
+				.col-lg-5.col-xl-6.text-center.position-relative( data-aos-once="true" data-aos="fade-right")
+					
+					.photo
+						img.w-100(src="img/content/ivan.png", alt="")
+					.name Иван Родионов
+					.position Генеральный директор «Rodionoff Group»
+
+				.col-lg-7.col-xl-6.text-big
+					.text-block
+						p Говорят, что отработав 10 000 часов, ты становишься настоящим профессионалом. Я не считал часов... 
+						p Я просто написал более 500 коммерческих предложений и презентаций. 
+						p Теперь я точно знаю, какими должны быть презентационные материалы для ваших Клиентов. Как в электронном формате, так и для проведения встреч. Какая структура наиболее эффективна, какой должен быть объем, как презентовать цену и отстраиваться от конкурентов. 
+						p Пишу это не просто так, а чтобы вы знали – за каждый проект я отвечаю лично. Поэтому вы можете не сомневаться в результате.
+					.btn-container.text-center
+						.btn2.mt-5(data-toggle="modal" data-target="#modal") Связаться с директором лично
+			.num-list.row
+				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up")
+					.num-item__value 6
+					.num-item__desc лет на рынке маркетинга и web-development
+				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up" data-aos-delay="300")
+					.num-item__value 500+
+					.num-item__desc выполненных проектов
+				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up" data-aos-delay="600")
+					.num-item__value 150
+					.num-item__desc млрд. рублей – совокупный оборот наших клиентов
+				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up" data-aos-delay="900")
+					.num-item__value 100%
+					.num-item__desc окупаемость каждого проекта
+
+	section.section-solution
+		.bg-container
+			img(src="img/general/sculpt2.png", alt="alt")
+		.container
+			h1.text-center СЛЫШИМ. НАХОДИМ РЕШЕНИЕ. ДЕЙСТВУЕМ.
+			.subtitle.mb-5.text-center Мы сделали процесс разработки коммерческого предложения предельно комфортным для Клиента. Вы просто рассказываете о вашей задаче, компании и продукте – все остальное делаем мы.
+			.row.pt-4
+				.col-lg-5.offset-lg-7
+					.solution-item( data-aos-once="true" data-aos="fade-left")
+						h3.text-center ГЛУБОКИЙ АНАЛИЗ И АУДИТ
+						.solution-item__text.text-big Мы детально изучаем ваш бизнес, рынок и конкурентов. Используем методику «Jobs To Be Done», чтобы найти ключевые триггеры воздействия на вашу целевую аудиторию.
+						img.solution-item__icon(src="img/general/sol-icon (1).png", alt="")
+					.solution-item( data-aos-once="true" data-aos="fade-left" data-aos-delay="300")
+						h3.text-center ПРОДАЮЩИЕ ТЕКСТЫ
+						.solution-item__text.text-big Говорим с клиентом на языке выгод. Используем лучшие приемы копирайтинга, помогая клиенту принимать решение в вашу пользу.
+						img.solution-item__icon(src="img/general/sol-icon (2).png", alt="")
+					.solution-item( data-aos-once="true" data-aos="fade-left" data-aos-delay="600")
+						h3.text-center ЭКЛЮЗИВНЫЙ ДИЗАЙН
+						.solution-item__text.text-big Создадим дорогую упаковку для вашего предложения, мимо которой нельзя пройти мимо.
+						img.solution-item__icon(src="img/general/sol-icon (3).png", alt="")
+	
+	section.section-garant
+		.bg-container
+				img(src="img/general/sculpt3.png", alt="alt")
+		.container
+			h3 ОТВЕЧАЕМ ЗА РЕЗУЛЬТАТ
+			h1 НА ПРОТЯЖЕНИИ 3 МЕСЯЦЕВ
+			.row.pt-5
+				.col-lg-5
+					h3.mb-0( data-aos-once="true" data-aos="fade-up"): small Лучшая оценка нашей работы –
+					h1.bb(data-aos="zoom-in-right"  data-aos-once="true"): small ваши продажи.
+					.subtitle
+						p( data-aos-once="true" data-aos="fade-right") Именно поэтому каждому Клиенту мы предоставляем сопровождение до 3-х месяцев.
+						p( data-aos-once="true" data-aos="fade-right" data-aos-delay="300") В течение этого времени мы готовы вносить правки согласно обратной связи от ваших клиентов, делая коммерческое предложение МАКСИМАЛЬНО эффективным.
+	section.section-price
+		.container.pt-5
+			h3 СКОЛЬКО СТОИТ РАЗРАБОТКА
+			h1 КОММЕРЧЕСКОГО ПРЕДЛОЖЕНИЯ?
+			.subtitle.mb-5 Коммерческое предложение - это ваши единоразовые инвестиции в рост продаж и клиентопотока. Заплатив однажды, вы будете получать новых клиентов 24 часа в сутки 365 дней в году.
+				.swiper-container.pt-5.swiper-price
+					.swiper-wrapper
+						.swiper-slide.d-flex
+							.card
+								.card__header
+									.card__name «VIP»
+									.card__desc Коммерческое предложение «под ключ» + face-лист + сопроводительное письмо + длительное сопровождение (до 16 страниц/слайдов)
+								.card__body
+									ul.check-list
+										li Аудит продукта/услуги
+										li Аудит существующих презентаций/коммерческих предложений
+										li Анализ конкурентов
+										li Написание продающего текста
+										li Разработка индивидуального дизайна
+										li Разработка face-листа «под ключ» (листовка «о компании»)
+										li Написание сопроводительного письма
+										li Предварительное тестирование на фокус-группе
+										li 3 месяца корретировки
+										li Чек-лист для менеджеров
+										li Два формата использования (электронный и для печати)
+								.card__footer
+									.card__price 40 000 <span>₽</span>
+									.btn2.card-btn(data-toggle="modal" data-target="#modal") Заказать
+						.swiper-slide.d-flex
+							.card
+								.card__header
+									.card__name «ОПТИМА»
+									.card__desc Коммерческое предложение «под ключ» + сопроводительное пиьсмо + сопровождение (до 8 страниц/слайдов)
+								.card__body
+									ul.check-list
+										li Аудит продукта/услуги
+										li Аудит существующих презентаций/коммерческих предложений
+										li Анализ конкурентов
+										li Написание продающего текста
+										li Разработка индивидуального дизайна
+										li Написание сопроводительного письма
+										li 2 месяца корректировок
+										li Чек-лист для менеджеров
+										li Два формата использования (электронный и для печати)
+								.card__footer
+									.card__price 25 000 <span>₽</span>
+									.btn2.card-btn(data-toggle="modal" data-target="#modal") Заказать
+						.swiper-slide.d-flex
+							.card
+								.card__header
+									.card__name «БАЗОВЫЙ»
+									.card__desc Коммерческое предложение «под ключ» + сопровождение (до 4 страниц/слайдов)
+								.card__body
+									ul.check-list
+										li Аудит продукта/услуги
+										li Аудит существующих презентаций/коммерческих предложений
+										li Написание продающего текста
+										li Разработка индивидуального дизайна
+										li 2 недели корретировки
+										li Чек-лист для менеджеров
+										li Два формата использования (электронный и для печати)
+								.card__footer
+									.card__price 18 000 <span>₽</span>
+									.btn2.card-btn(data-toggle="modal" data-target="#modal") Заказать
+	
+	section.section-smi
+		.container
+			h3 ДЕЛИМСЯ ОПЫТОМ 
+			h1 В СМИ И БЛОГАХ
+			.row
+				.col-6.col-lg-3.mb-4.mb-lg-0
+					.news
+						.news__body.mb-4
+							.news__photo.mb-3
+								.embed-responsive.embed-responsive-16by9
+									.embed-responsive-item(style='background: url(img/content/news.jpg) no-repeat center/cover')
+							.news__title «Как написать коммерческое предложение, которое не отправят в урну»?
+						a.news__link.link(href="https://vk.com/away.php?to=https%3A%2F%2Fspark.ru%2Fstartup%2Frodionoff%2Fblog%2F10380%2Fkak-napisat-kommercheskoe-predlozhenie-kotoroe-ne-otpravyat-v-urnu&post=-10763908_9462&cc_key=54Z97W" target="_blank") Читать подробнее
+				.col-6.col-lg-3.mb-4.mb-lg-0
+					.news
+						.news__body.mb-4
+							.news__photo.mb-3
+								.embed-responsive.embed-responsive-16by9
+									.embed-responsive-item(style='background: url(img/content/news.jpg) no-repeat center/cover')
+							.news__title 9 фактов, которые сделают ваше коммерческое предложение лучше
+						a.news__link.link(href="https://spark.ru/startup/rodionoff/blog/11712/9-faktov-kotorie-sdelayut-vashe-kommercheskoe-predlozhenie-luchshe" target="_blank") Читать подробнее
+				.col-6.col-lg-3.mb-4.mb-lg-0
+					.news
+						.news__body.mb-4
+							.news__photo.mb-3
+								.embed-responsive.embed-responsive-16by9
+									.embed-responsive-item(style='background: url(img/content/news.jpg) no-repeat center/cover')
+							.news__title 6 лайфхаков коммерческих предложений
+						a.news__link.link(href="https://spark.ru/startup/rodionoff/blog/11925/6-lajfhakov-kommercheskih-predlozhenij" target="_blank") Читать подробнее
+				.col-6.col-lg-3.mb-4.mb-lg-0
+					.news
+						.news__body.mb-4
+							.news__photo.mb-3
+								.embed-responsive.embed-responsive-16by9
+									.embed-responsive-item(style='background: url(img/content/news.jpg) no-repeat center/cover')
+							.news__title 9 идей для вашего текста «О компании»
+						a.news__link.link(href="https://vk.com/away.php?to=https%3A%2F%2Fvk.cc%2F7jXnt2&post=-10763908_9462&cc_key=" target="_blank") Читать подробнее
+
+	section.section-form.mt-xl-5
+		.bg-container
+			img(src="img/general/mockup.png", alt="alt")
+		.container.d-flex.justify-content-end.pt-lg-5
+			form.text-center.d-flex.flex-column
+				h3: small Давайте обсудим детали вашего проекта
+				p Оставьте заявку и мы перезвоним вам
+				input(type='hidden' name='admin_email' value='v4nich@gmail.com')
+				input(type='hidden' name='project_name' value='Rodionoff')
+				input(type='hidden' name='form_subject' value='contacts')
+				input.mb-4.input-name(type="text" required placeholder="Введите ваше имя")
+				input.mb-4.input-phone(type="text" required placeholder="Введите ваш номер")
+				input.mb-4.input-mail(type="mail" required placeholder="Введите ваш E-Mail") 
+				button.mb-4.btn2.px-0.py-3(data-toggle="modal" data-target="#modal") Обсудить проект
+				small Нажимая на кнопку, вы принимаете условия политики конфиденциальности
+	section.section-social.mt-xl-5
+		.container.pt-5
+			h3 МЫ ЕСТЬ В СОЦИАЛЬНЫХ СЕТЯХ 
+			h1 И НАМ УЖЕ ДОВЕРЯЮТ БОЛЕЕ 5 ТЫС. ЧЕЛ
+			.row
+				.col-lg-8.offset-lg-2
+					#vk_groups.w-100
+					
+

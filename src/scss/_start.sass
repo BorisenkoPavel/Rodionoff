@@ -11,7 +11,10 @@ body
 	height: 100%
 	font-family: $a-font
 	color: #fff
+	font-weight: 400
 	background-color: #050816
+	overflow-x: hidden
+
 h1
 	font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem
 	@include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *$min_font)
@@ -80,10 +83,14 @@ button
 
 .content
 	flex: 1 0 auto
+	overflow-x: hidden
 
 section
 	position: relative
 	padding: 3.75rem 0
+
+.section-banner
+	padding-bottom: 5rem
 
 .link
 	color: inherit
@@ -121,18 +128,19 @@ ul.check-list
 
 .btn2
 	border: none
-	font-family: inherit
 	font-size: inherit
 	color: inherit
+	font-family: $d-font
 	background: $grad
+	letter-spacing: 0.1825rem
 	cursor: pointer
 	padding: 1.5625rem 5rem
 	display: inline-block
 	text-transform: uppercase
-	letter-spacing: 1px
 	font-weight: 700
 	outline: none
 	position: relative
+	white-space: nowrap
 	transition: all 0.3s
 	color: #fff
 	box-shadow: 0 6px #3920ff, -5px 18px 90px rgba(186, 77, 255, 0.4), inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
