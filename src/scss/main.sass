@@ -70,6 +70,16 @@ a.text-small
     box-shadow: inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
     background-color: #1c1c1c
     background-image: linear-gradient(to bottom, #c24dff 0%, #5948ff 100%)
+.case
+  position: relative
+.case__photo
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  transition: .6s ease
+  backface-visibility: hidden
 .case__body
   background-color: rgba(12, 0, 28, 0.85)
   padding: 3.125rem
@@ -94,6 +104,8 @@ a.text-small
   overflow: hidden
   min-height: 300px
   &:hover
+    .case__photo
+      transform: scale(1.15)
     .case__body
       transition: transform .5s
       transform: translate(0)
@@ -107,7 +119,8 @@ a.text-small
         transition: .3s
         transition-delay: .8s
         transform: translate(0)
-
+.hidden-row
+  display: none
       
 .slide
   padding: 2.5rem 3.125rem
@@ -145,12 +158,16 @@ a.text-small
 .swiper-prev
   &:before
     transform: rotate(180deg)
-
+.pagination-container
+  z-index: 300
+  position: absolute
+  top: 13.2%
+  right: 0
 .swiper-page
   font-size: 3.125rem
   letter-spacing: 0.125rem
   font-family: $d-font
-  font-weight: 300
+  font-weight: 400
   text-align: center
 
 .total
@@ -191,7 +208,7 @@ a.text-small
     position: absolute
     bottom: 0
     img
-      width: 80%
+      width: 100%
 
 .answer-block
   padding: 0 3.125rem
@@ -244,12 +261,31 @@ a.text-small
     right: 0
 .solution-item
   position: relative
-  padding-right: 100px
-  margin-bottom: 7.5rem
+  padding-right: 130px
+  margin-bottom: 10rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  h3
+    background: #050816
+    display: inline-block
+    padding: 0 20px
+  &:before
+    content: ''
+    position: absolute
+    left: -70px
+    bottom: -90px
+    right: 40px
+    top: 17px
+    border: 10px solid #242426
+    opacity: .7
+    z-index: -1
 .solution-item__icon
   position: absolute
-  bottom: -30px
-  right: 0
+  bottom: -40px
+  right: -20px
+  background: #050816
+  padding: 20px
 
 .bb
   position: relative
@@ -295,7 +331,6 @@ a.text-small
   display: flex
   flex-direction: column
   &__header
-    box-shadow: inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
     border-radius: 10px 10px 0 0
     background-image: linear-gradient(to bottom, #c24dff 0%, #5948ff 100%)
     padding: 0.625rem 1.5625rem
@@ -354,6 +389,7 @@ form
   border-radius: 10px 10px 20px 20px
   background-color: #252629
   padding: 3.125rem
+
 input
   height: 70px
   box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.03)
@@ -375,4 +411,7 @@ input
   background-image: url("../img/general/input-icon (3).png")
   background-repeat: no-repeat
   background-position: 20px center
+
+.section-garant
+  padding-top: 9rem
 @import media

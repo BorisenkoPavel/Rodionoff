@@ -4,7 +4,10 @@ $(document).ready(function () {
 
 	svg4everybody({});
 
-	VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "400"}, 10763908);
+	$('.btn-show').on('click', function(){
+		$('.hidden-row').slideDown()
+		$(this).hide()
+	})
 
 	var slider = new Swiper('.review-slider', {
 		pagination: {
@@ -37,17 +40,16 @@ $(document).ready(function () {
 
 	$("form").submit(function() {
 		var th = $(this);
-		// /*modalSubmited();
-		//  console.log(th.serialize())
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			// $('#Modal').modal('hide')
 			$('.fade.bd-example-modal-sm').modal('show')
 			setTimeout(function() {
 				// Done Functions
+				yaCounter30621767.reachGoal('ntt');
+				gtag('event', 'send', {'event_category': 'form', 'event_action': 'zayavka'})
 				th.trigger("reset");
 			}, 1000);
 		});

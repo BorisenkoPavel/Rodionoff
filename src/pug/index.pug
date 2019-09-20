@@ -1,7 +1,7 @@
 extends templates/main
 
 block variables
-	- var title = 'Главная страница'
+	- var title = 'Коммерческое предложение'
 	- var pageClass = 'index-page'
 block content
 	section.section-banner
@@ -25,51 +25,156 @@ block content
 		.container
 			h3.mb-2 ПОСМОТРИТЕ
 			h1 ПРИМЕРЫ НАШИХ РАБОТ
-		.row.no-gutters.mb-5
+		.row.no-gutters
 			.col-md-6.col-xl-4
-				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/alfa.html" style='background: url("img/content/case (2).jpg") no-repeat center/cover' target="_blank")
-					.case__body
-						h3 КОМПАНИЯ «ТЕНДЕР IT» <br>СОПРОВОЖДЕНИЕ ГОСЗАКУПОК <br>«ПОД КЛЮЧ»
-						.subtitle.d-flex.align-items-end.justify-content-between
-							span Посмотреть пример<br> коммерческого предложения
-							.arrow.mb-2
-			.col-md-6.col-xl-4
-				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/made-of-stone.html" style='background: url("img/content/case (1).jpg") no-repeat center/cover' target="_blank")
-					.case__body
-						h3 Компания «Rodionoff Group».<br> Разработка Landing Page <br>«под ключ»
-						.subtitle.d-flex.align-items-end.justify-content-between
-							span Посмотреть пример<br> коммерческого предложения
-							.arrow.mb-2
-			.col-md-6.col-xl-4
-				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/landing.html" style='background: url("img/content/case (3).jpg") no-repeat center/cover' target="_blank")
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/astone.html" target="_blank")
+					.case__photo(style='background: url("img/content/case (1).jpg") no-repeat center/cover' target="_blank")
 					.case__body
 						h3 Компания «Astone Group». <br>Строительство, архитектура и дизайн.
 						.subtitle.d-flex.align-items-end.justify-content-between
 							span Посмотреть пример<br> коммерческого предложения
 							.arrow.mb-2
 			.col-md-6.col-xl-4
-				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/astone.html" style='background: url("img/content/case (4).jpg") no-repeat center/cover' target="_blank")
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/topline.html" target="_blank")
+					.case__photo(style='background: url("img/content/case (2).jpg") no-repeat center/cover' target="_blank")
 					.case__body
 						h3 Компания «TopLine». Оптовая продажа натяжных потолков и комплектующих.
 						.subtitle.d-flex.align-items-end.justify-content-between
 							span Посмотреть пример<br> коммерческого предложения
 							.arrow.mb-2
 			.col-md-6.col-xl-4
-				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/topline.html" style='background: url("img/content/case (5).jpg") no-repeat center/cover' target="_blank")
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/made-of-stone.html" target="_blank")
+					.case__photo( style='background: url("img/content/case (3).jpg") no-repeat center/cover' target="_blank")
+					.case__body
+						h3 Компания<br> «MADE OF STONE».
+						.subtitle.d-flex.align-items-end.justify-content-between
+							span Посмотреть пример<br> коммерческого предложения
+							.arrow.mb-2
+			.col-md-6.col-xl-4
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/lpg.html" target="_blank")
+					.case__photo( style='background: url("img/content/case (4).jpg") no-repeat center/cover' target="_blank")
 					.case__body
 						h3 Компания «LPG».<br> Маркетинг с оплатой за результат.
 						.subtitle.d-flex.align-items-end.justify-content-between
 							span Посмотреть пример<br> коммерческого предложения
 							.arrow.mb-2
 			.col-md-6.col-xl-4
-				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/lpg.html" style='background: url("img/content/case (6).jpg") no-repeat center/cover' target="_blank")
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/optfish.html" target="_blank")
+					.case__photo( style='background: url("img/content/case (5).jpg") no-repeat center/cover' target="_blank")
 					.case__body
-						h3 Компания<br> «MADE OF STONE».
+						h3 Компания «OptFish». Оптовая продажа товаров для рыбалки<br> и активного отдыха
 						.subtitle.d-flex.align-items-end.justify-content-between
 							span Посмотреть пример<br> коммерческого предложения
 							.arrow.mb-2
-		.btn-container.text-center
-			a.nolink.btn2(href="") еще
+			.col-md-6.col-xl-4
+				a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/don.html" target="_blank")
+					.case__photo( style='background: url("img/content/case (6).jpg") no-repeat center/cover' target="_blank")
+					.case__body
+						h3 «дон строй технологи»<br>технологичные решения в строительстве.
+						.subtitle.d-flex.align-items-end.justify-content-between
+							span Посмотреть пример<br> коммерческого предложения
+							.arrow.mb-2
+		.hidden-row
+			.row
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/nixteam.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (7).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 Компания «NIXTEAM».<br>it-решения для ваших идей
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/avel.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (8).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 Компания «ivel engineering».<br>электромонтажные услуги.
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/massmedia.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (9).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 группа компаний «масс медиа центр».
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/organik.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (10).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 Компания «organic food». <br/>поставка свежих овощей, фруктов и орехов.
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/citypml.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (11).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 «citycard»<br />программа мобильной лояльности.
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/bezopasnost.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (12).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 Компания «безопасность». <br>устройство инженерных сетей.
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/fz.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (13).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 Компания «формула здоровья».<br>медицинский центр
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/rose.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (14).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 «rozaros»<br>живые розы.
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				.col-md-6.col-xl-4
+					a.nolink.case.h-100.d-flex.flex-column.justify-content-between(href="http://kp.rodionoff.biz/mir.html" target="_blank")
+						.case__photo( style='background: url("img/content/case (15).jpg") no-repeat center/cover' target="_blank")
+						.case__body
+							h3 Компания «мир станков».<br>промышленное оборудование из китая
+							.subtitle.d-flex.align-items-end.justify-content-between
+								span Посмотреть пример<br> коммерческого предложения
+								.arrow.mb-2
+				//- .col-md-6.col-xl-4
+				//- 	a.nolink.case.h-100.d-flex.flex-column.justify-content-b( target="_blank")etween
+					.case__photo(href="http://kp.rodionoff.biz/mir.html" style='background: url("img/content/case (16).jpg") no-repeat center/cover' target="_blank")
+				//- 		.case__body
+									h3 Компания «Твой Дом». Технический надзор строительных работ
+				//- 			.subtitle.d-flex.align-items-end.justify-content-between
+				//- 				span Посмотреть пример<br> коммерческого предложения
+				//- 				.arrow.mb-2
+				//- .col-md-6.col-xl-4
+				//- 	a.nolink.case.h-100.d-flex.flex-column.justify-content-b( target="_blank")etween
+					.case__photo(href="http://kp.rodionoff.biz/alfa.html" style='background: url("img/content/case (19).jpg") no-repeat center/cover' target="_blank")
+				//- 		.case__body
+				//- 			h3 КОМПАНИЯ «ТЕНДЕР IT» <br>СОПРОВОЖДЕНИЕ ГОСЗАКУПОК <br>«ПОД КЛЮЧ»
+				//- 			.subtitle.d-flex.align-items-end.justify-content-between
+				//- 				span Посмотреть пример<br> коммерческого предложения
+				//- 				.arrow.mb-2
+				//- .col-md-6.col-xl-4
+				//- 	a.nolink.case.h-100.d-flex.flex-column.justify-content-b( target="_blank")etween
+					.case__photo(href="http://kp.rodionoff.biz/optfish.html" style='background: url("img/content/case (21).jpg") no-repeat center/cover' target="_blank")
+				//- 		.case__body
+				//- 			h3 Посмотреть пример коммерческого предложения
+				//- 			.subtitle.d-flex.align-items-end.justify-content-between
+				//- 				span Посмотреть пример<br> коммерческого предложения
+				//- 				.arrow.mb-2
+
+		.btn-container.text-center.btn-show.mt-5
+			.btn2 Смотреть еще
 	section.section-slider(style='background: url("img/general/skulpt.png") no-repeat center left/50%')
 		.container
 			.swiper-container.review-slider
@@ -77,8 +182,8 @@ block content
 					.swiper-slide
 						.section-title.mb-5.d-inline-flex.flex-column.align-items-start
 							h1.d-inline-block.mb-2 5 000 000 рублей
-							.subtitle-container.d-inline-flex.gradient-line.align-items-center
-								h3.d-inline-block.text-right.ml-4.mb-0 за 6 месяцев
+							
+								
 						.slide.text-big.col-lg-9
 							.slide__header.d-flex
 								.slide__photo
@@ -101,8 +206,8 @@ block content
 					.swiper-slide
 						.section-title.mb-5.d-inline-flex.flex-column.align-items-start
 							h1.d-inline-block.mb-2 «МЫ ВЫГОДГО ВЫДЕЛЯЕМСЯ СРЕДИ КОНКУРЕНТОВ»
-							.subtitle-container.d-inline-flex.gradient-line.align-items-center
-								h3.d-inline-block.text-right.ml-4.mb-0 за 6 месяцев
+							
+								
 						.slide.text-big.col-lg-9
 							.slide__header.d-flex
 								.slide__photo
@@ -123,8 +228,8 @@ block content
 					.swiper-slide
 						.section-title.mb-5.d-inline-flex.flex-column.align-items-start
 							h1.d-inline-block.mb-2 «ЗАРАБОТАЛИ 500 000 РУБЛЕЙ ЗА ПЕРВЫЕ 12 ВСТРЕЧ»
-							.subtitle-container.d-inline-flex.gradient-line.align-items-center
-								h3.d-inline-block.text-right.ml-4.mb-0 за 6 месяцев
+							
+								
 						.slide.text-big.col-lg-9
 							.slide__header.d-flex
 								.slide__photo
@@ -145,8 +250,8 @@ block content
 					.swiper-slide
 						.section-title.mb-5.d-inline-flex.flex-column.align-items-start
 							h1.d-inline-block.mb-2 «1 500 000 РУБЛЕЙ НА ПРОДАЖЕ ИСКУССТВЕННЫХ ЕЛОК»
-							.subtitle-container.d-inline-flex.gradient-line.align-items-center
-								h3.d-inline-block.text-right.ml-4.mb-0 за 6 месяцев
+							
+								
 						.slide.text-big.col-lg-9
 							.slide__header.d-flex
 								.slide__photo
@@ -161,7 +266,7 @@ block content
 							| Более 
 							span.total-accent 5 000 000
 							|  рублей чистой прибыли за первые полгода использования КП.
-				.col-lg-3.d-flex.flex-lg-column.align-items-center.pt-4.pt-lg-0.justify-content-between.justify-content-lg-start(style="z-index: 300;position: absolute;top: 13.2%;right: 0;")
+				.col-lg-3.d-flex.flex-lg-column.align-items-center.pt-4.pt-lg-0.justify-content-between.justify-content-lg-start.pagination-container
 					.swiper-page
 					.swiper-nav.swiper-next
 					.swiper-nav.swiper-prev
@@ -185,7 +290,7 @@ block content
 	section.section-faq
 		.container
 			h1.mb-4.text-center ЗАЧЕМ ЭТО ВАМ НУЖНО?
-			.subntitle.mb-5.text-center Причин много, вот некоторые из них:
+			.subtitle.mb-5.text-center Причин много, вот некоторые из них:
 			.row.pt-3
 				.col-md-4.answer-block
 					.answer-block__icon.mb-4
@@ -223,7 +328,7 @@ block content
 						p Теперь я точно знаю, какими должны быть презентационные материалы для ваших Клиентов. Как в электронном формате, так и для проведения встреч. Какая структура наиболее эффективна, какой должен быть объем, как презентовать цену и отстраиваться от конкурентов. 
 						p Пишу это не просто так, а чтобы вы знали – за каждый проект я отвечаю лично. Поэтому вы можете не сомневаться в результате.
 					.btn-container.text-center
-						.btn2.mt-5(data-toggle="modal" data-target="#modal") Связаться с директором лично
+						.btn2.mt-5(data-toggle="modal" data-target="#modal5") Связаться с директором лично
 			.num-list.row
 				.col-sm-6.col-lg-3.num-item( data-aos-once="true" data-aos="fade-up")
 					.num-item__value 6
@@ -247,15 +352,15 @@ block content
 			.row.pt-4
 				.col-lg-5.offset-lg-7
 					.solution-item( data-aos-once="true" data-aos="fade-left")
-						h3.text-center ГЛУБОКИЙ АНАЛИЗ И АУДИТ
+						h3.text-center.mb-5 ГЛУБОКИЙ АНАЛИЗ И АУДИТ
 						.solution-item__text.text-big Мы детально изучаем ваш бизнес, рынок и конкурентов. Используем методику «Jobs To Be Done», чтобы найти ключевые триггеры воздействия на вашу целевую аудиторию.
 						img.solution-item__icon(src="img/general/sol-icon (1).png", alt="")
 					.solution-item( data-aos-once="true" data-aos="fade-left" data-aos-delay="300")
-						h3.text-center ПРОДАЮЩИЕ ТЕКСТЫ
+						h3.text-center.mb-5 ПРОДАЮЩИЕ ТЕКСТЫ
 						.solution-item__text.text-big Говорим с клиентом на языке выгод. Используем лучшие приемы копирайтинга, помогая клиенту принимать решение в вашу пользу.
 						img.solution-item__icon(src="img/general/sol-icon (2).png", alt="")
 					.solution-item( data-aos-once="true" data-aos="fade-left" data-aos-delay="600")
-						h3.text-center ЭКЛЮЗИВНЫЙ ДИЗАЙН
+						h3.text-center.mb-5 ЭКЛЮЗИВНЫЙ ДИЗАЙН
 						.solution-item__text.text-big Создадим дорогую упаковку для вашего предложения, мимо которой нельзя пройти мимо.
 						img.solution-item__icon(src="img/general/sol-icon (3).png", alt="")
 	
@@ -299,7 +404,7 @@ block content
 										li Два формата использования (электронный и для печати)
 								.card__footer
 									.card__price 40 000 <span>₽</span>
-									.btn2.card-btn(data-toggle="modal" data-target="#modal") Заказать
+									.btn2.card-btn(data-toggle="modal" data-target="#modal6") Заказать
 						.swiper-slide.d-flex
 							.card
 								.card__header
@@ -318,7 +423,7 @@ block content
 										li Два формата использования (электронный и для печати)
 								.card__footer
 									.card__price 25 000 <span>₽</span>
-									.btn2.card-btn(data-toggle="modal" data-target="#modal") Заказать
+									.btn2.card-btn(data-toggle="modal" data-target="#modal7") Заказать
 						.swiper-slide.d-flex
 							.card
 								.card__header
@@ -335,7 +440,7 @@ block content
 										li Два формата использования (электронный и для печати)
 								.card__footer
 									.card__price 18 000 <span>₽</span>
-									.btn2.card-btn(data-toggle="modal" data-target="#modal") Заказать
+									.btn2.card-btn(data-toggle="modal" data-target="#modal8") Заказать
 	
 	section.section-smi
 		.container
@@ -347,33 +452,33 @@ block content
 						.news__body.mb-4
 							.news__photo.mb-3
 								.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item(style='background: url(img/content/news.jpg) no-repeat center/cover')
+									.embed-responsive-item(style='background: url(img/content/4.jpg) no-repeat center/cover')
 							.news__title «Как написать коммерческое предложение, которое не отправят в урну»?
-						a.news__link.link(href="https://vk.com/away.php?to=https%3A%2F%2Fspark.ru%2Fstartup%2Frodionoff%2Fblog%2F10380%2Fkak-napisat-kommercheskoe-predlozhenie-kotoroe-ne-otpravyat-v-urnu&post=-10763908_9462&cc_key=54Z97W" target="_blank") Читать подробнее
+						a.news__link.link.stretched-link(href="https://vk.com/away.php?to=https%3A%2F%2Fspark.ru%2Fstartup%2Frodionoff%2Fblog%2F10380%2Fkak-napisat-kommercheskoe-predlozhenie-kotoroe-ne-otpravyat-v-urnu&post=-10763908_9462&cc_key=54Z97W" target="_blank") Читать подробнее
 				.col-6.col-lg-3.mb-4.mb-lg-0
 					.news
 						.news__body.mb-4
 							.news__photo.mb-3
 								.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item(style='background: url(img/content/news.jpg) no-repeat center/cover')
+									.embed-responsive-item(style='background: url(img/content/2.jpg) no-repeat center/cover')
 							.news__title 9 фактов, которые сделают ваше коммерческое предложение лучше
-						a.news__link.link(href="https://spark.ru/startup/rodionoff/blog/11712/9-faktov-kotorie-sdelayut-vashe-kommercheskoe-predlozhenie-luchshe" target="_blank") Читать подробнее
+						a.news__link.link.stretched-link(href="https://spark.ru/startup/rodionoff/blog/11712/9-faktov-kotorie-sdelayut-vashe-kommercheskoe-predlozhenie-luchshe" target="_blank") Читать подробнее
 				.col-6.col-lg-3.mb-4.mb-lg-0
 					.news
 						.news__body.mb-4
 							.news__photo.mb-3
 								.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item(style='background: url(img/content/news.jpg) no-repeat center/cover')
+									.embed-responsive-item(style='background: url(img/content/1.jpg) no-repeat center/cover')
 							.news__title 6 лайфхаков коммерческих предложений
-						a.news__link.link(href="https://spark.ru/startup/rodionoff/blog/11925/6-lajfhakov-kommercheskih-predlozhenij" target="_blank") Читать подробнее
+						a.news__link.link.stretched-link(href="https://spark.ru/startup/rodionoff/blog/11925/6-lajfhakov-kommercheskih-predlozhenij" target="_blank") Читать подробнее
 				.col-6.col-lg-3.mb-4.mb-lg-0
 					.news
 						.news__body.mb-4
 							.news__photo.mb-3
 								.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item(style='background: url(img/content/news.jpg) no-repeat center/cover')
+									.embed-responsive-item(style='background: url(img/content/3.jpg) no-repeat center/cover')
 							.news__title 9 идей для вашего текста «О компании»
-						a.news__link.link(href="https://vk.com/away.php?to=https%3A%2F%2Fvk.cc%2F7jXnt2&post=-10763908_9462&cc_key=" target="_blank") Читать подробнее
+						a.news__link.link.stretched-link(href="https://vk.com/away.php?to=https%3A%2F%2Fvk.cc%2F7jXnt2&post=-10763908_9462&cc_key=" target="_blank") Читать подробнее
 
 	section.section-form.mt-xl-5
 		.bg-container
@@ -384,11 +489,11 @@ block content
 				p Оставьте заявку и мы перезвоним вам
 				input(type='hidden' name='admin_email' value='v4nich@gmail.com')
 				input(type='hidden' name='project_name' value='Rodionoff')
-				input(type='hidden' name='form_subject' value='contacts')
-				input.mb-4.input-name(type="text" required placeholder="Введите ваше имя")
-				input.mb-4.input-phone(type="text" required placeholder="Введите ваш номер")
-				input.mb-4.input-mail(type="mail" required placeholder="Введите ваш E-Mail") 
-				button.mb-4.btn2.px-0.py-3(data-toggle="modal" data-target="#modal") Обсудить проект
+				input(type='hidden' name='form_subject' value='Обсудим детали проекта')
+				input.mb-4.input-name(type="text" name='Имя' required placeholder="Введите ваше имя")
+				input.mb-4.input-phone(type="text" name='Телефон' required placeholder="Введите ваш номер")
+				input.mb-4.input-mail(type="mail" name='Почта' required placeholder="Введите ваш E-Mail") 
+				button.mb-4.btn2.px-0.py-3 Обсудить проект
 				small Нажимая на кнопку, вы принимаете условия политики конфиденциальности
 	section.section-social.mt-xl-5
 		.container.pt-5
@@ -397,5 +502,8 @@ block content
 			.row
 				.col-lg-8.offset-lg-2
 					#vk_groups.w-100
-					
+					script(type='text/javascript' src='https://vk.com/js/api/openapi.js?162')
+					script(type='text/javascript').
+						VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "400"}, 10763908);
+
 

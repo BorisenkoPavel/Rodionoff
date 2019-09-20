@@ -115,16 +115,18 @@ ul.check-list
 	padding: 0
 	li
 		position: relative
-		padding-left: 2.5rem
+		padding-left: 1.875rem
 		&:before
 			content: ''
 			position: absolute
 			left: 0
+			top: 0.4375rem
 			background-image: url(../img/general/check.png)
 			background-repeat: no-repeat
 			background-position: center
-			width: 28px
-			height: 28px
+			background-size: contain
+			width: 16px
+			height: 16px
 
 .btn2
 	border: none
@@ -143,13 +145,29 @@ ul.check-list
 	white-space: nowrap
 	transition: all 0.3s
 	color: #fff
-	box-shadow: 0 6px #3920ff, -5px 18px 90px rgba(186, 77, 255, 0.4), inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
+	box-shadow: -5px 18px 90px rgba(186, 77, 255, 0.4)
 	transition: none
-	border-radius: 15px
+	border-radius: 8px
 	font-size: 1.5625rem
+	position: relative
+	&:before
+		content: ''
+		z-index: -1
+		box-shadow: -5px 18px 90px rgba(186, 77, 255, 0.4), inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
+		border-radius: 15px
+		background-color: #3e16ff
+		position: absolute
+		top: 5px
+		bottom: -5px
+		left: 0
+		right: 0
 	&:hover
-		box-shadow: 0 4px #3920ff, -5px 18px 90px rgba(186, 77, 255, 0.4), inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
 		top: 2px
+		&:before
+			top: 3px
+			bottom: -3px
 	&:active
-		box-shadow: 0 0 #3920ff, -5px 18px 90px rgba(186, 77, 255, 0.4), inset 0 0 7px rgba(57, 62, 255, 0.92), inset 0 0 9px rgba(38, 48, 255, 0.25)
 		top: 6px
+		&:before
+			top: 0
+			bottom: 0
